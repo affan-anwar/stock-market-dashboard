@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stock-market-dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo"></div>
+
+        <nav>
+            <ul>
+                <li><a href="https://groww.in/">Dashboard</a></li>
+                <li><a href="https://groww.in/stocks/calendar">Stocks calendar</a></li>
+                <li><a href="https://groww.in/mutual-funds/amc">Mutual Funds</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <button class="signup-btn" id="signupBtn">Sign up</button>
+            <button class="login-btn" id="loginBtn">Login</button>
+        </div>
+    </header>
+
+
+    <!-- AUTH MODAL (LOGIN / SIGNUP) -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-box">
+
+            <span class="close-btn" id="closeAuth">&times;</span>
+
+            <!-- LOGIN FORM -->
+            <form class="login-form">
+                <h2>Login</h2>
+
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <hr>
+
+            <!-- SIGNUP FORM -->
+            <form class="signup-form">
+                <h2>Sign Up</h2>
+
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+
+                <button type="submit">Create Account</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <ul>
+                <li>Overview</li>
+                <li>Watchlist</li>
+                <li>Investments</li>
+                <li>Transactions</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <!-- TOP CARDS SECTION -->
+            <section class="top-cards">
+                <div class="card">
+                    <h3>Market Cap</h3>
+                    <p>₹ 300 Trillion</p>
+                </div>
+
+                <div class="card">
+                    <h3>Volume</h3>
+                    <p>₹ 50 Billion</p>
+                </div>
+
+                <div class="card">
+                    <h3>Change</h3>
+                    <p>+1.2%</p>
+                </div>
+            </section>
+
+
+            <!-- CHART SECTION -->
+            <section class="charts">
+                <div class="chart-box">
+                    Chart Area
+                </div>
+            </section>
+
+
+            <!-- STOCK LIST SECTION -->
+            <section class="stocks">
+                <h2>Top Stocks</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Reliance</td>
+                            <td>₹ 7,786</td>
+                            <td>+2.5%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Infosys</td>
+                            <td>₹ 1,450</td>
+                            <td>-0.8%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div>© 2026 Stock Market Dashboard</div>
+        <div>Privacy Policy</div>
+        <div>Terms & Conditions</div>
+    </footer>
+
+</body>
+</html>
